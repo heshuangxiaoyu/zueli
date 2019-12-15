@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>滚动效果</title>
+	<style type="text/css">
+		#box{
+			width: 1300px;
+			height: 470px;
+			position: relative;
+			left: 0px;
+			overflow: hidden;
+			border-right: 2px solid black;
+			border-left: 2px solid black;
+			margin: 100px auto;
+		}
+		.kuangjia{
+			width: 1200px;
+			height: 390px;
+			position: absolute;
+			left: 50px;
+			top: 25px;
+			overflow: hidden;
+		}
+		.slider{
+			width: 8400px;
+			height: 390px;
+			position: absolute;
+			top: 25px;
+			left: -1200px;
+		}
+		.slide { 
+			top: 25px;
+			width: 1200px;
+			height: 370px;
+			float: left;
+		}
+		#i{
+			width: 1200px;
+			height: 370px;
+			position: absolute;
+			float: left;
+		}
+		#left{
+			left: 50px;
+		}
+		#right{
+			right: 50px;
+		}
+		.box>span{
+			display: block;;
+			width: 30px;
+			height: 50px;
+			text-align: center;
+			cursor: pointer;
+			color:    ;
+			top: 175px;
+			line-height: 50px;
+			background: rgb(255,0,0);
+			font-size: 30px;
+			position: absolute;
+			opacity: 0;
+		}
+		.attention{
+			position: absolute;
+			width: 1300px;
+			height: 20px;
+			background-color:rgb(200,200,200);
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			display: block;
+		}
+		.contion p{
+			height: 20px;
+			width: 500px;
+			display: inline-block;
+			color: red;
+			float: right;
+			margin: 0px;
+		}
+		.slider2{
+			display: inline-block;
+			position: absolute;
+			left: 150px;
+		}
+		.subscript ul{
+			position: absolute;
+			left: 500px;
+			bottom: 50px;
+		}
+		.subscript li{
+			display: block;
+			float: left;
+			width: 20px;
+			background-color: rgb(200,200,200);
+			border-radius: 50%;
+			margin-right: 40px;
+			text-align: center;
+		}
+		li.active{
+			background-color: red;
+		}
+
+	</style>
+	<script src="animate.js"></script>
+
+</head>
+<body>
+	<div class="box" id="box">
+		<div class="kuangjia">
+			<div class="slider" id="slider">
+				<div class="slide"><img src="新建文件夹\b5.png" id="i"></div>
+				<div class="slide"><img src="新建文件夹\b1.png" id="i"></div>
+				<div class="slide"><img src="新建文件夹\b2.png"i id="i"></div>
+				<div class="slide"><img src="新建文件夹\b3.png" id="i"></div>
+				<div class="slide"><img src="新建文件夹\b4.png" id="i"></div>
+				<div class="slide"><img src="新建文件夹\b5.png" id="i"></div>
+				<div class="slide"><img src="新建文件夹\b1.png" id="i"></div>	
+			</div>
+		</div>
+		<span id="left"><</span>
+		<span id="right">></span>
+		<div class="attention" id="attention">
+			<div class="slider2" id="slider2"><img src="新建文件夹\a15.png"></div>
+			<div class="contion" id="contion"> <p>【温馨提示】最近有不少不法分子在网上骗人，请大家注意！！！</p></div>
+		</div>
+		<div class="subscript">
+			<ul id="subscript">
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script src="javascript.js"></script>
+</html>
